@@ -5,7 +5,7 @@ $(function() {
 
 	setInterval("update();",5000);
 });
-
+//
 function update() {
 	init_data = JSON.parse($('#init-data').val());
 
