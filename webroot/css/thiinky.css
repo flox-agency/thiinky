@@ -2,11 +2,14 @@ body, label, input, textarea, select, button {
 font-family: "Helvetica Neue",Arial,sans-serif;
 }
 
+<<<<<<< HEAD
 input {
 	border: 1px solid;
 	border-color: #AAA;
 }
 
+=======
+>>>>>>> refs/heads/master
 body {
 font-size: 14px;
 line-height: 18px;
@@ -627,6 +630,7 @@ box-shadow: none;
 font-size: 13px;
 color: #777;
 text-align: center;
+<<<<<<< HEAD
 }
 
 .composer {
@@ -643,4 +647,6 @@ border-bottom: 1px solid #E8E8E8;
 -webkit-border-radius: 5px 5px 5px 5px;
 -moz-border-radius: 5px 5px 5px 5px;
 border-radius: 5px 5px 5px 5px;
+=======
+>>>>>>> refs/heads/master
 }

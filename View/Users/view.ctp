@@ -46,6 +46,7 @@
 			</li>
 		</ul>
 	</div>
+<<<<<<< HEAD
 
 </div>
 <div class="module component composer">
@@ -54,6 +55,12 @@
 		  <input id="tags" placeholder="Exprimez-vous..."/>
 		</div>
 	</div>
+=======
+</div>
+<div class="ui-widget">
+  <label for="tags">Tags: </label>
+  <input id="tags" />
+>>>>>>> refs/heads/master
 </div>
 <div class="content-main" id="timeline">
 	<div class="content-header">
