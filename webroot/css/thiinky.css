@@ -2,14 +2,11 @@ body, label, input, textarea, select, button {
 font-family: "Helvetica Neue",Arial,sans-serif;
 }
 
-<<<<<<< HEAD
 input {
 	border: 1px solid;
 	border-color: #AAA;
 }
 
-=======
->>>>>>> refs/heads/master
 body {
 font-size: 14px;
 line-height: 18px;
