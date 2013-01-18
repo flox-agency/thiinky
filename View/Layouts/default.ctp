@@ -28,11 +28,16 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 	</title>
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+	<script src="http://malsup.github.com/jquery.form.js"></script>
+
 	<?php
 		echo $this->Html->meta('icon');
 
 		echo $this->Html->css('thiinky');
+		echo $this->Html->css('jquery.pnotify.default');
+		echo $this->Html->css('http://code.jquery.com/ui/1.10.0/themes/base/jquery-ui.css');
 		echo $this->Html->script('thiinky');
+		echo $this->Html->script('jquery.pnotify');
 
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
