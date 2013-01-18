@@ -49,9 +49,12 @@
 </div>
 <div class="module component composer">
 	<div class="composer-inner">
-		<div class="ui-widget">
-		  <input id="tags" placeholder="Exprimez-vous..."/>
-		</div>
+		<form action="/thiinky/thiinkies/create.json" method="Post">
+			<div class="ui-widget">
+			  <input id="tags" placeholder="Exprimez-vous..." name="data[tags]"/>
+			  <input type="submit">
+			</div>
+		</form>
 	</div>
 </div>
 <div class="content-main" id="timeline">

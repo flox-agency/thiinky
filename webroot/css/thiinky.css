@@ -627,7 +627,6 @@ box-shadow: none;
 font-size: 13px;
 color: #777;
 text-align: center;
-<<<<<<< HEAD
 }
 
 .composer {
@@ -644,6 +643,15 @@ border-bottom: 1px solid #E8E8E8;
 -webkit-border-radius: 5px 5px 5px 5px;
 -moz-border-radius: 5px 5px 5px 5px;
 border-radius: 5px 5px 5px 5px;
-=======
->>>>>>> refs/heads/master
+}
+
+.ui-helper-hidden-accessible {
+border: 0;
+clip: rect(0 0 0 0);
+height: 1px;
+margin: -1px;
+overflow: hidden;
+padding: 0;
+position: absolute;
+width: 1px;
 }

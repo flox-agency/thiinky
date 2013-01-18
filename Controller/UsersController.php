@@ -4,8 +4,7 @@
  	public $name = 'Users';
  	public $uses = array('User','Thiinky');
  	public $scaffold;
- 	public $components = array('RequestHandler');
-
+ 	
  	public function view($username = null)
  	{
  		$this->User->recursive = -1;
@@ -33,7 +32,7 @@
  	{
  		$term = $this->request->query['term'];
  		$this->layout = 'ajax';
-
+ 		
  		$this->User->recursive = -1;
  		$u = $this->User->find('all',array('fields' => array('User.username'),
  											'conditions' => array('User.username LIKE' => '%'.$term.'%')));
