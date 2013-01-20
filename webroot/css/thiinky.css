@@ -259,6 +259,13 @@ float: right;
 width: 520px;
 position: relative;
 }
+
+#cluetip .profile-card.profile-header {
+width: 520px;
+position: relative;
+float: none;
+}
+
 .profile-card .flex-module {
 background-color: white;
 }
