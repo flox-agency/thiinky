@@ -108,6 +108,25 @@
  		$this->set('nbSent',$nbSent);
  		$this->set('nbReceived',$nbReceived);
  	}
+
+ 	public function search($count=10,$q=null)
+ 	{
+ 		$q = $this->request->query['q'];
+ 		$count = $this->request->query['count'];
+ 		$this->layout = 'ajax';
+
+ 		$this->User->recursive = -1;
+ 		$u = $this->User->find('all',array('fields' => array('User.id','User.name','User.username','User.avatar_normal'),
+ 											'conditions' => array('OR' => array('User.username LIKE' => '%'.$q.'%',
+ 																				'User.name LIKE' => '%'.$q.'%')
+ 																),
+ 											'limit' => $count
+ 											));
+ 		$this->set('u',$u);
+ 		$this->set('q',$q);
+ 		
+ 	}
+
  }
 
 ?>

@@ -64,7 +64,21 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 								<i class="bird-topbar-blue"></i>
 							</a>
 						</li>
+						<li class="profile" data-global-action="profile">
+	                      <a class="" href="<?php echo $this->Html->url(array('controller'=>'users','action'=>'index',AuthComponent::user('username'))) ?>" data-component-term="profile_nav" data-nav="profile" title="Moi">
+	                        <span class="new-wrapper">
+	                        	<i class="nav-me"></i>
+	                        	<i class="nav-new"></i>
+	                        </span>
+	                        <span class="text">Moi</span>
+	                      </a>
+	                    </li>
 					</ul>
+					<div class="pull-right">
+						<form class="form-search" action="/search" id="global-nav-search">
+							<input class="search-input" type="text" id="search-query" placeholder="Rechercher" name="q" autocomplete="off" spellcheck="false" data-focus="false">
+						</form>
+					</div>
 				</div>
 			</div>
 		</div>

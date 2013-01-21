@@ -27,7 +27,54 @@ $(document).ready(function() {
 				type: 'success'
 			});	
 		}
-	}); 
+	});
+
+	$( "#search-query" )
+	  // don't navigate away from the field on tab when selecting an item
+	  .bind( "keydown", function( event ) {
+	  	if ( event.keyCode === $.ui.keyCode.TAB &&
+	  		$( this ).data( "autocomplete" ).menu.active ) {
+	  		event.preventDefault();
+	  }
+	})
+	  .autocomplete({
+	  	source: function( request, response ) {
+	  		$.getJSON( "/thiinky/users/search.json", {
+	  			q: request.term,
+	  			count:10
+	  			}, function (data) {
+	  				response(data.users);
+	  			});
+	  	},
+	  	messages: 'off',
+	  	search: function() {
+	      // custom minLength
+	      var term = $(this).val();
+	      if (term.length < 1) {
+	      	return false;
+	      }
+	  },
+	  focus: function() {
+	      // prevent value inserted on focus
+	      return false;
+	  },
+	  select: function( event, ui ) {
+	  	var terms =  this.value ;
+	      // remove the current input
+	      $(this).val('');
+	      // add the selected item
+	      $(this).val(ui.item.value);
+	      $(location).attr('href','/thiinky/users/index/'+ui.item.username);
+	      return false;
+	  }
+	})
+	.data( "autocomplete" )._renderItem = function( ul, item ) {
+            return $( "<li></li>" )
+                .data( "item.autocomplete", item )
+                .append( "<a>"+ item.label + item.name + "</a>" )
+                .appendTo( ul );
+        };;
+
 
 
 	function split( val ) {

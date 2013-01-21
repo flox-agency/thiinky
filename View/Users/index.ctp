@@ -32,7 +32,7 @@
 									</a>
 								</small>
 								<a class="account-group tips" href="<?php echo $this->Html->url(array('action'=>'index',$thiinky['Sender']['username'])); ?>" rel="<?php echo $this->Html->url(array('action'=>'popup',$thiinky['Sender']['username'],'ext'=>'json')); ?>">
-									<img class="avatar " src="<?php echo $thiinky['Sender']['avatar_big'] ?>" alt="Think Cloud">
+									<img class="avatar " src="<?php echo $thiinky['Sender']['avatar_normal'] ?>" alt="Think Cloud">
 									<a href="<?php echo $this->Html->url(array('action'=>'index',$thiinky['Sender']['username'])) ?>"><strong class="fullname"><?php echo $thiinky['Sender']['name']; ?></strong></a>
 									<span>‏</span>
 									<span class="username"><s>@</s><b><?php echo $thiinky['Sender']['username']; ?></b></span>

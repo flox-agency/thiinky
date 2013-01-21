@@ -42,6 +42,11 @@ img {
 border: 0;
 }
 
+form {
+font-size: 12px;
+margin-bottom: 0;
+}
+
 a {
 color: #0084B4;
 text-decoration: none;
@@ -108,6 +113,10 @@ float: left;
 margin-right: 12px;
 }
 
+.nav li {
+position: relative;
+}
+
 .nav li a {
 position: relative;
 font-size: 12px;
@@ -128,6 +137,19 @@ padding-right: 14px;
 padding-left: 14px;
 }
 
+.nav .new-wrapper {
+position: relative;
+float: left;
+}
+
+.nav-me {
+background-position: -120px -50px;
+width: 21px;
+}
+
+.nav-home, .nav-topics, .nav-people, .nav-me, .nav-tweet {
+height: 22px;
+}
 .nav i {
 float: left;
 margin: -4px 6px 0 0;
@@ -690,4 +712,54 @@ width: 1px;
 	margin: 3px;
 	width: 33px;
 	height: 33px;
+}
+
+.pull-right {
+float: right;
+}
+
+.form-search {
+position: relative;
+}
+
+.global-nav .form-search {
+position: relative;
+float: left;
+margin: 7px 0;
+font-size: 12px;
+}
+
+.global-nav .form-search {
+width: 202px;
+height: 26px;
+}
+
+.global-nav .search-input {
+display: block;
+width: 163px;
+height: 14px;
+padding: 6px 27px 6px 12px;
+font-size: 12px;
+line-height: 1;
+color: #666;
+background-color: #CCC;
+border: 0;
+-webkit-border-radius: 13px;
+-moz-border-radius: 13px;
+border-radius: 13px;
+-webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .2);
+-moz-box-shadow: inset 0 1px 2px rgba(0,0,0,.2);
+box-shadow: inset 0 1px 2px rgba(0, 0, 0, .2);
+-webkit-transition: all .2s ease-in-out;
+-moz-transition: all .2s ease-in-out;
+transition: all .2s ease-in-out;
+}
+
+.global-nav .form-search .search-input {
+position: absolute;
+top: 0;
+right: 0;
+z-index: 2;
+color: #444;
+background-image: url(data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7);
 }
